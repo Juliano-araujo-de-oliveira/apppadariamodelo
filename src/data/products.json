@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+    "name": "Coxinha de Frango",
+    "description": "Tradicional coxinha recheada com frango desfiado temperado",
+    "price": 5.50,
+    "category": "Salgados",
+    "image": "https://images.unsplash.com/photo-1686515266396-080c4939e6b4?w=500&q=80"
+  },
+  {
+    "id": "2",
+    "name": "Pastel de Carne",
+    "description": "Pastel crocante recheado com carne moída bem temperada",
+    "price": 6.00,
+    "category": "Salgados",
+    "image": "https://images.unsplash.com/photo-1686515266396-080c4939e6b4?w=500&q=80"
+  },
+  {
+    "id": "3",
+    "name": "Esfiha de Carne",
+    "description": "Esfiha aberta com carne moída, tomate e temperos especiais",
+    "price": 5.00,
+    "category": "Salgados",
+    "image": "https://images.unsplash.com/photo-1686515266396-080c4939e6b4?w=500&q=80"
+  },
+  {
+    "id": "4",
+    "name": "Quiche de Queijo",
+    "description": "Quiche francesa cremosa com queijos especiais",
+    "price": 7.50,
+    "category": "Salgados",
+    "image": "https://images.unsplash.com/photo-1686515266396-080c4939e6b4?w=500&q=80"
+  },
+  {
+    "id": "5",
+    "name": "Empada de Palmito",
+    "description": "Empada crocante com recheio cremoso de palmito",
+    "price": 6.50,
+    "category": "Salgados",
+    "image": "https://images.unsplash.com/photo-1686515266396-080c4939e6b4?w=500&q=80"
+  },
+  {
+    "id": "6",
+    "name": "Pão de Queijo",
+    "description": "Pão de queijo mineiro quentinho e sequinho",
+    "price": 4.00,
+    "category": "Salgados",
+    "image": "https://images.unsplash.com/photo-1686515266396-080c4939e6b4?w=500&q=80"
+  },
+  {
+    "id": "7",
+    "name": "Brigadeiro Gourmet",
+    "description": "Brigadeiro cremoso coberto com chocolate belga",
+    "price": 3.50,
+    "category": "Doces",
+    "image": "https://images.unsplash.com/photo-1599748724588-e98bf13d01f0?w=500&q=80"
+  },
+  {
+    "id": "8",
+    "name": "Beijinho",
+    "description": "Beijinho tradicional com coco ralado",
+    "price": 3.50,
+    "category": "Doces",
+    "image": "https://images.unsplash.com/photo-1599748724588-e98bf13d01f0?w=500&q=80"
+  },
+  {
+    "id": "9",
+    "name": "Cajuzinho",
+    "description": "Docinho de amendoim em formato de cajuzinho",
+    "price": 3.50,
+    "category": "Doces",
+    "image": "https://images.unsplash.com/photo-1599748724588-e98bf13d01f0?w=500&q=80"
+  },
+  {
+    "id": "10",
+    "name": "Trufa de Chocolate",
+    "description": "Trufa recheada com chocolate meio amargo",
+    "price": 4.00,
+    "category": "Doces",
+    "image": "https://images.unsplash.com/photo-1599748724588-e98bf13d01f0?w=500&q=80"
+  },
+  {
+    "id": "11",
+    "name": "Brownie",
+    "description": "Brownie de chocolate denso e úmido",
+    "price": 8.00,
+    "category": "Doces",
+    "image": "https://images.unsplash.com/photo-1599748724588-e98bf13d01f0?w=500&q=80"
+  },
+  {
+    "id": "12",
+    "name": "Cookie Artesanal",
+    "description": "Cookie americano com gotas de chocolate",
+    "price": 6.00,
+    "category": "Doces",
+    "image": "https://images.unsplash.com/photo-1599748724588-e98bf13d01f0?w=500&q=80"
+  },
+  {
+    "id": "13",
+    "name": "Bolo de Chocolate",
+    "description": "Bolo tradicional de chocolate com cobertura cremosa (fatia)",
+    "price": 12.00,
+    "category": "Bolos",
+    "image": "https://images.unsplash.com/photo-1641301949637-89a79d4a46a0?w=500&q=80"
+  },
+  {
+    "id": "14",
+    "name": "Bolo de Cenoura",
+    "description": "Bolo caseiro de cenoura com brigadeiro (fatia)",
+    "price": 10.00,
+    "category": "Bolos",
+    "image": "https://images.unsplash.com/photo-1641301949637-89a79d4a46a0?w=500&q=80"
+  },
+  {
+    "id": "15",
+    "name": "Bolo de Laranja",
+    "description": "Bolo úmido de laranja com calda (fatia)",
+    "price": 11.00,
+    "category": "Bolos",
+    "image": "https://images.unsplash.com/photo-1641301949637-89a79d4a46a0?w=500&q=80"
+  },
+  {
+    "id": "16",
+    "name": "Bolo Red Velvet",
+    "description": "Bolo red velvet com cream cheese (fatia)",
+    "price": 15.00,
+    "category": "Bolos",
+    "image": "https://images.unsplash.com/photo-1641301949637-89a79d4a46a0?w=500&q=80"
+  },
+  {
+    "id": "17",
+    "name": "Bolo de Limão",
+    "description": "Bolo leve de limão siciliano (fatia)",
+    "price": 11.00,
+    "category": "Bolos",
+    "image": "https://images.unsplash.com/photo-1641301949637-89a79d4a46a0?w=500&q=80"
+  },
+  {
+    "id": "18",
+    "name": "Bolo de Ninho",
+    "description": "Bolo de leite ninho com nutella (fatia)",
+    "price": 14.00,
+    "category": "Bolos",
+    "image": "https://images.unsplash.com/photo-1641301949637-89a79d4a46a0?w=500&q=80"
+  }
+]

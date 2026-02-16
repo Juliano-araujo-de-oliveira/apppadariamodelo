@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  @apply bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 bg-slate-900 text-white;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8B6F47, #6d5638);
+  @apply rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6d5638, #8B6F47);
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  @apply outline-none ring-2 ring-offset-2 ring-offset-slate-900;
+  ring-color: #8B6F47;
+}
+
+/* =============================================
+   CORREÇÃO DO TOAST (VERDE TRANSPARENTE)
+   ============================================= */
+
+/* Alvo no container principal do Toast */
+[role="status"],
+[data-radix-toast-root] {
+  background-color: rgba(34, 197, 94, 0.2) !important;
+  /* Verde 20% */
+  background-image: none !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(34, 197, 94, 0.4) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Fura qualquer camada branca interna que o Shadcn/Radix cria */
+[role="status"] div,
+[data-radix-toast-root] div,
+[role="status"] section {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+/* Garante que o texto seja branco puro e visível */
+[role="status"] h3,
+[role="status"] p,
+[role="status"] div,
+[role="status"] {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  /* Melhora leitura no fundo transparente */
+}
+
+/* Ícone de fechar (X) */
+[role="status"] button {
+  color: white !important;
+  opacity: 0.8 !important;
+}

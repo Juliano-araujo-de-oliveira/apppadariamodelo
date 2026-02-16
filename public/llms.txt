@@ -1,0 +1,6 @@
+## Pages
+- [Cadastro - Padaria Teste](/signup): No description available
+- [Cardápio - App Padaria Modelo](/menu): No description available
+- [Login - Padaria Teste](/login): No description available
+- [Meu Perfil - Padaria Teste](/profile): Gerencie suas informações pessoais
+- [Meus Pedidos - Padaria Teste](/orderhistory): No description available
