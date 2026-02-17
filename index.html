@@ -59,13 +59,17 @@
  <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      // O '?v=2' força o navegador a baixar o arquivo novamente
-      navigator.serviceWorker.register('/sw.js?v=2', { scope: '/' }).then(function(reg) {
-        console.log('Service Worker detectado na raiz!');
-        reg.update(); // Força a busca por novos scripts
-      }).catch(function(err) {
-        console.log('Erro ao registrar:', err);
-      });
+      // Usamos o parâmetro 't' com a hora atual para garantir que o cache seja ignorado
+      const swPath = '/sw.js?t=' + Date.now();
+      
+      navigator.serviceWorker.register(swPath, { scope: '/' })
+        .then(function(reg) {
+          console.log('Service Worker ativo!');
+          reg.update(); // Força a busca por novos scripts do PushAlert
+        })
+        .catch(function(err) {
+          console.error('Erro no Service Worker:', err);
+        });
     });
   }
 </script>
