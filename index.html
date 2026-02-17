@@ -56,15 +56,15 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
   
-  <script>
+ <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
-        // Isso força o Service Worker a procurar atualizações toda vez
-        registration.update(); 
-        console.log('ServiceWorker registrado na raiz!');
+      // O '?v=2' força o navegador a baixar o arquivo novamente
+      navigator.serviceWorker.register('/sw.js?v=2', { scope: '/' }).then(function(reg) {
+        console.log('Service Worker detectado na raiz!');
+        reg.update(); // Força a busca por novos scripts
       }).catch(function(err) {
-        console.log('Erro no registro:', err);
+        console.log('Erro ao registrar:', err);
       });
     });
   }
