@@ -1,4 +1,5 @@
 const CACHE_NAME = 'padaria-v2';
+importScripts("https://cdn.pushalert.co/unified_c590f680b718c8d6247c5d34f6631bfe.js");
 const urlsToCache = [
   '/',
   '/index.html',

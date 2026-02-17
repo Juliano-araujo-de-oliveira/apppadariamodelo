@@ -6,28 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="generator" content="Hostinger Horizons" />
   <title>APP Padaria Modelo</title>
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "SEU_APP_ID_AQUI", // Você pega no painel do OneSignal
-      safari_web_id: "ID_DO_SAFARI",
-      notifyButton: {
-        enable: true,
-      },
-    });
-  });
-</script>
-  <!-- PWA Configuration -->
+
+  <script type="text/javascript">
+    (function(d, t) {
+        var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+        g.src = "https://cdn.pushalert.co/unified_c590f680b718c8d6247c5d34f6631bfe.js";
+        s.parentNode.insertBefore(g, s);
+    }(document, "script"));
+  </script>
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#e80032" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Padaria Modelo" />
-<link rel="manifest" href="/manifest.json">
-  <!-- Icons -->
+
   <link rel="icon" type="image/png" sizes="32x32"
     href="https://rezwukolnsnzjqmbescn.supabase.co/storage/v1/object/public/Imagens-cardapio/pao.png?v=150"
     crossorigin="anonymous" />
@@ -40,7 +34,6 @@
     href="https://rezwukolnsnzjqmbescn.supabase.co/storage/v1/object/public/Imagens-cardapio/pao.png?v=150" />
 
   <style>
-    /* Este código roda antes de qualquer outro arquivo, garantindo o fundo correto */
     :root {
       background-color: #FFF5F5 !important;
     }
@@ -48,7 +41,6 @@
     html,
     body {
       background-color: #FFF5F5 !important;
-      background: #FFF5F5 !important;
       margin: 0;
       padding: 0;
       min-height: 100%;
@@ -63,16 +55,18 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-</body>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
-        console.log('ServiceWorker registrado com sucesso: ', registration.scope);
-      }, function(err) {
-        console.log('Falha ao registrar o ServiceWorker: ', err);
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+        }, function(err) {
+          console.log('Falha ao registrar o ServiceWorker: ', err);
+        });
       });
-    });
-  }
-</script>
+    }
+  </script>
+</body>
+
 </html>
