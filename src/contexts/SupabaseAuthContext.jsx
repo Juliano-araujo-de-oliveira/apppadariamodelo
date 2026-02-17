@@ -10,7 +10,10 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
+// Após o login com sucesso no Supabase
+const externalUserId = user.id; // ID do usuário no Supabase
 
+OneSignal.login(externalUserId); // Vincula o OneSignal ao usuário do Supabase
   const handleSession = useCallback(async (session) => {
     setSession(session);
     setUser(session?.user ?? null);

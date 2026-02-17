@@ -6,7 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="generator" content="Hostinger Horizons" />
   <title>APP Padaria Modelo</title>
-
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "SEU_APP_ID_AQUI", // Você pega no painel do OneSignal
+      safari_web_id: "ID_DO_SAFARI",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
   <!-- PWA Configuration -->
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#e80032" />
