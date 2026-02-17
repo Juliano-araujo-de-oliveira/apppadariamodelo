@@ -25,4 +25,6 @@ self.addEventListener('fetch', event => {
         return response || fetch(event.request);
       })
   );
+  self.addEventListener('install', () => self.skipWaiting());
+self.addEventListener('activate', () => self.clients.claim());
 });

@@ -57,16 +57,18 @@
   <script type="module" src="/src/main.jsx"></script>
   
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          console.log('ServiceWorker registrado com sucesso: ', registration.scope);
-        }, function(err) {
-          console.log('Falha ao registrar o ServiceWorker: ', err);
-        });
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        // Isso força o Service Worker a procurar atualizações toda vez
+        registration.update(); 
+        console.log('ServiceWorker registrado na raiz!');
+      }).catch(function(err) {
+        console.log('Erro no registro:', err);
       });
-    }
-  </script>
+    });
+  }
+</script>
 </body>
 
 </html>
